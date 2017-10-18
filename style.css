@@ -4,7 +4,7 @@
 	/*border: 1px solid rgba(0, 0, 0, 1);*/
 }
 p{
-  margin-left: 150px;
+  margin-left: 150	px;
   background-color: lightblue;
   text-align: left;
 }
@@ -14,6 +14,10 @@ body {
 h1{
   text-align: center;
   margin-top: 55px;
+}
+
+form{
+	text-align: left;
 }
 .tabs
 {
@@ -46,7 +50,6 @@ h1{
   margin-right: 100px;
   margin-top: 20px;
 }
-
 .checkboxtab
 {
 	display: none;

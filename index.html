@@ -4,6 +4,7 @@
 <head>
 	<title>Home Page</title>
 	<link href="style.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<h1>My HomePage</h1>
@@ -28,7 +29,15 @@
 				<input name="checkbox-tabs-group" type="radio" id="checkbox3" class="checkboxtab">
 				<label for="checkbox3">Contact Me</label>
 				<div class="content">
-					<p>Phone no. : 9002319323</p>
+					<form >
+						Name :
+						<input type="text",id="formName"><br>
+						Phone No. :
+						<input type="number", id="formNumber"><br>
+						Email Id :
+						<input type="text", id="formEmail"><br>
+					</form>
+					<input type="submit", id="submit1", value="submit">
 				</div>
 			</div>
 
