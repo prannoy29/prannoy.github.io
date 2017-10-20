@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
 	<title>Home Page</title>
 	<link href="style.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="script.js"></script>
@@ -31,11 +33,11 @@
 				<div class="content">
 					<form >
 						Name :
-						<input type="text",id="formName"><br>
+						<input type="text",id="formName" required><br>
 						Phone No. :
-						<input type="number", id="formNumber"><br>
+						<input type="number", id="formNumber" required><br>
 						Email Id :
-						<input type="text", id="formEmail"><br>
+						<input type="text", id="formEmail" required><br>
 					</form>
 					<input type="submit", id="submit1", value="submit">
 				</div>
@@ -44,34 +46,8 @@
 			<div class="tab">
 				<input name="checkbox-tabs-group" type="radio" id="checkbox4" class="checkboxtab">
 				<label for="checkbox4">My Gallery</label>
-				<div class="content">
-				<div class = "floated_img">
-					<img src = "http://images2.fanpop.com/image/photos/10500000/Pink-Floyd-pink-floyd-10566698-1440-900.jpg" width="300" height="200">
-				</div>
-				<div class="floated_img">
-					<img src="http://www.guitarnoise.com/images/features/pink-floyd-wallpaper.jpg" width="600" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="http://www.pinkfloydonline.com/wp-content/gallery/albumcovers/divisionbell.jpg" width="600" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="http://pastdaily.com/wp-content/uploads/2014/08/Pink-Floyd-resize-2.jpg" width="600" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="http://images2.fanpop.com/images/photos/5400000/Pink-Floyd-pink-floyd-5430399-750-510.jpg" width="600" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="http://1.bp.blogspot.com/-COVpn0_JSoI/UDYTioulWCI/AAAAAAAACsY/8a97SwTg8uw/s640/Pink+Floyd+-+The+Wall.jpg" width="1200" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="https://40.media.tumblr.com/7479484d140a9f49a0ea9ee6d3ff12b5/tumblr_n92v0ex5cC1syce09o1_500.jpg" width="600" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="https://images3.alphacoders.com/962/96277.jpg" width="600" height="400">
-				</div>
-				<div class="floated_img">
-					<img src="http://img06.deviantart.net/29f9/i/2005/143/8/0/pink_floyd_by_cbaseggio.jpg" width="600" height="400">
-				</div>
+				<div class="content", id = "imageCont">
+				
 			</div>
 		</div>
 	</body>
