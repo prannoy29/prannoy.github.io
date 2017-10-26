@@ -19,6 +19,13 @@ h1{
 form{
 	text-align: left;
 }
+
+button{
+  background-color: lightblue;
+  margin-left: 10px;
+}
+
+
 .tabs
 {
 	position: relative;
