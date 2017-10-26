@@ -41,13 +41,36 @@ var jsonDoc = [
   }
 ];
 var json = JSON.parse(JSON.stringify(jsonDoc));
-console.log(json);
+console.log(document.getElementById('img1'));
 var images = '';
 for( var i=0;i<json.length; ++i ) {
-  images += '<div class = "floated_img"><img src="'+json[i]['imgUrl']+'" width="600" height="400"></div>';
+  images += '<div class = "floated_img"><button id ="'+i+'"/>X</button><button>Edit</button><img id = "img'+i+'" src="'+json[i]['imgUrl']+'" width="600" height="400"></div>';
 }
+console.log(images);
 document.getElementById( 'imageCont' ).innerHTML = images;
+
+for (var i =0; i <json.length; i++) {
+  var tempId = "img"+i;
+  var temp = i+"";
+  document.getElementById(temp).addEventListener("click",function(e){
+    console.log(temp);
+    document.getElementById(e.target.id).parentNode.innerHTML='';
+  
+  },true);
+
+}
+//console.log(document.getElementById('img1').parentNode.removeChild(document.getElementById('img1')));
 //console.log(document.getElementById( 'imageCont' ).innerHTML);
+function editImage(imgId){
+
+}
+
+function deleteImage(imgId){
+var image_x = document.getElementById('imgId');
+image_x.parentNode.removeChild(imgId);
+console.log("hello")
+}
+
 }
 
 function formSubmition(){
