@@ -25,14 +25,21 @@ button{
   margin-left: 10px;
 }
 
+#model{
+	display: none;
+	width: 80px;
+	float: right;
+	margin-right: 50px;
+}
+
 
 .tabs
 {
 	position: relative;
 	clear: both;
   margin-top: 25px;
-  margin-right: 415px;
-  margin-left: 400px;
+  margin-right: 100px;
+  margin-left: 375px;
   margin-bottom: 20px;
 
   text-decoration-style: solid;
@@ -85,7 +92,7 @@ button{
 .floated_img
 {
   margin: 5px;
-  border: 1px solid #ccc;
+//  border: 1px solid #ccc;
   float: left;
   width: 180px;
 }

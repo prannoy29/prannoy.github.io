@@ -1,6 +1,14 @@
 window.onload = function(){
 var temp = document.getElementById('submit1');
 temp.onclick = formSubmition;
+
+var submitTemp2 = document.getElementById('submit2');
+submitTemp2.onclick = formSubmition2;
+
+var addImage = document.getElementById('Add');
+addImage.onclick = function(){
+  document.getElementById('model').style.display = 'block';
+}
 var jsonDoc = [
   {
     "imgUrl":"http://images2.fanpop.com/image/photos/10500000/Pink-Floyd-pink-floyd-10566698-1440-900.jpg",
@@ -44,7 +52,7 @@ var json = JSON.parse(JSON.stringify(jsonDoc));
 console.log(document.getElementById('img1'));
 var images = '';
 for( var i=0;i<json.length; ++i ) {
-  images += '<div class = "floated_img"><button id ="'+i+'"/>X</button><button>Edit</button><img id = "img'+i+'" src="'+json[i]['imgUrl']+'" width="600" height="400"></div>';
+  images += '<div class = "floated_img"><button id ="'+i+'"/>X</button><button id ="'+i+'edit">Edit</button><img id = "img'+i+'" src="'+json[i]['imgUrl']+'" width="600" height="400"></div>';
 }
 console.log(images);
 document.getElementById( 'imageCont' ).innerHTML = images;
@@ -55,22 +63,16 @@ for (var i =0; i <json.length; i++) {
   document.getElementById(temp).addEventListener("click",function(e){
     console.log(temp);
     document.getElementById(e.target.id).parentNode.innerHTML='';
-  
   },true);
-
-}
-//console.log(document.getElementById('img1').parentNode.removeChild(document.getElementById('img1')));
-//console.log(document.getElementById( 'imageCont' ).innerHTML);
-function editImage(imgId){
-
 }
 
-function deleteImage(imgId){
-var image_x = document.getElementById('imgId');
-image_x.parentNode.removeChild(imgId);
-console.log("hello")
+for (var i=0; i <json.length;i++){
+  var temp = i+"edit";
+  document.getElementById(temp).addEventListener("click",function(e){
+    console.log(temp);
+    document.getElementById('model').style.display = 'block';
+  },true);
 }
-
 }
 
 function formSubmition(){
@@ -96,7 +98,34 @@ function formSubmition(){
   }
 }
 
+
 function validateEmail(email) {
     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
 }
+
+
+ function formSubmition2(){
+   var dateNow = new Date();
+   var expression = /[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
+   var regex = new RegExp(expression);
+   if(!document.getElementById('formUrl').value.match(regex)){
+     alert("Enter a Valid url");
+   }
+   else if (document.getElementById('formName').value=="") {
+     alert("Name cannot be left empty");
+     console.log(document.getElementById('formName'));
+   }
+   else if (document.getElementById('formInfo').value=="") {
+     alert("Info field cannot be left empty");
+     console.log(document.getElementById('formInfo'));
+   }
+   else if (document.getElementById('formDate').value > dateNow && document.getElementById('formDate').value!=="") {
+     alert("Enter a Valid Date");
+     console.log(document.getElementById('formDate'))
+   }
+   else {
+     document.getElementById('model').style.display = 'none';
+     alert("Image Editing/Adding Done");
+   }
+ }
