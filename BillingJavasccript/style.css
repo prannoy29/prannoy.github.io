@@ -1,0 +1,199 @@
+#bill{
+  position: fixed;
+  top:10px;
+  left: 0px;
+  z-index: 100;
+  width: 450px;
+  height:450px;
+  margin-left: 250px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  float: right;
+  margin-right: 100px;
+  display: none;
+  /*background-color: blue;*/
+}
+
+#bill p{
+  margin-left: 20px;
+  position: relative;
+  font-size: 20px;
+  color: #ff7845;
+}
+#billnum0{
+  background-color: 	#A9A9A9;
+  position: fixed;
+  top:10px;
+  left: 0px;
+  z-index: 100;
+  width: 450px;
+  height:450px;
+  margin-left: 250px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  float: right;
+  margin-right: 100px;
+  display: none;
+  /*background-color: red;*/
+}
+#billnum1{background-color: 	#A9A9A9;
+position: fixed;
+top:10px;
+left: 0px;
+z-index: 100;
+width: 450px;
+height:450px;
+margin-left: 250px;
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+float: right;
+margin-right: 100px;
+display: none;
+}
+#billnum2{background-color: 	#A9A9A9;
+position: fixed;
+top:10px;
+left: 0px;
+z-index: 100;
+width: 450px;
+height:450px;
+margin-left: 250px;
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+float: right;
+margin-right: 100px;
+display: none;
+}
+#billnum3{background-color: 	#A9A9A9;
+position: fixed;
+top:10px;
+left: 0px;
+z-index: 100;
+width: 450px;
+height:450px;
+margin-left: 250px;
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+float: right;
+margin-right: 100px;
+display: none;
+}
+#billnum4{background-color: 	#A9A9A9;
+position: fixed;
+top:10px;
+left: 0px;
+z-index: 100;
+width: 450px;
+height:450px;
+margin-left: 250px;
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+float: right;
+margin-right: 100px;
+display: none;
+}
+#billnum5{
+  background-color: 	#A9A9A9;
+  position: fixed;
+  top:10px;
+  left: 0px;
+  z-index: 100;
+  width: 450px;
+  height:450px;
+  margin-left: 250px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  float: right;
+  margin-right: 100px;
+  display: none;
+}
+#billnum6{background-color: 	#A9A9A9;
+position: fixed;
+top:10px;
+left: 0px;
+z-index: 100;
+width: 450px;
+height:450px;
+margin-left: 250px;
+border-style: solid;
+border-width: 1px 1px 1px 1px;
+float: right;
+margin-right: 100px;
+display: none;
+}
+.mainbilldiv{  background-color: 	#A9A9A9;
+  position: fixed;
+  top:10px;
+  left: 0px;
+  z-index: 100;
+  width: 450px;
+  height:450px;
+  margin-left: 250px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  float: right;
+  margin-right: 100px;
+  display: none;
+}
+#tableItems {
+    top:0px;
+  float:left;
+  width:200px;
+}
+
+#menuItems {
+    top:0px;
+  float: left;
+  width:600px;
+  height: auto;
+  margin-left: 90px;
+  border-style: solid;
+  border-width: 0px 0px 0px 2px;
+}
+
+h1{text-align: center;}
+body {padding: 20px; background-color: 	#F0FFFF;}
+input {margin-bottom: 5px; padding: 2px 3px; width: 209px;margin-left: 25px;}
+tr {padding: 4px; border: 1px #CCC solid; width: 100px; float: left;height: 30px;margin-bottom: 10px;}
+p{margin-bottom: -20px; margin-left: 5px;position: relative;}
+button{margin-left: 5px; margin-right: 5px;}
+
+input[type=button] {
+  border: none;
+  height: 25px;
+  width: 250px;
+  margin-left: 165px;
+  position: absolute;
+  bottom: 0;
+}
+
+#netbill {
+  position: relative;
+  bottom: 2px;
+  border: 2px 0px 0px 0px;
+  height: 35px;
+}
+#bill tr{
+  border-style: none;
+  width: 450px;
+  height: 25px;
+  margin-left: 24px;
+}
+#bill td{
+  width: 150px;
+  margin-left: 100px;
+}
+#menuItems tr{
+  width: 800px;
+  height: 70px;
+  margin-left: 25px;
+}
+
+#tableItems tr{
+  width: 250px;
+  height: 45px;
+}
+
+.paratable {
+  margin-bottom: 10px; margin-left: 4px;margin-top: 5px;
+}
